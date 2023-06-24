@@ -1,0 +1,215 @@
+/* Universal Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #333 !important;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: linen;
+}
+
+/* Gallery section */
+.container {
+    margin-top: 20px;
+}
+
+.image-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-grid div {
+    position: relative;
+}
+
+.image-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: linen;
+    cursor: pointer;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+#inaBrand {
+    font-size: xx-large;
+    font-weight: bold;
+    color: linen;
+}
+
+#inaBrand:hover {
+    color: bisque !important;
+}
+
+/* Bootstrap Overrides */
+.jumbotron {
+    background-image: url("../images/backgroundHeader1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: linen;
+    margin-top: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.navbar-default {
+    border-color: #a9444200 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #333;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar-nav .custom-link {
+    color: linen !important;
+}
+
+.navbar-nav .custom-link:hover {
+    color: bisque !important;
+}
+
+.navbar-brand.hidden-xs {
+    display: block;
+}
+
+
+#showcase {
+    margin-top: 50px;
+}
+
+#social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* About Section - Grid System */
+
+.left-col {
+    font-size: 52px;
+    /* font-weight: bold; */
+}
+
+.right-col {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+
+/* Contact Form*/
+
+#contactBtn {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+.container-fluid p {
+    font-weight: bold;
+}
+
+#emailContact {
+    float: left;
+}
+
+/* Current Page Title */
+h2 {
+    color: linen;
+}
+
+/* Change the color of the label texts */
+label[for="name"],
+label[for="email"],
+label[for="message"] {
+    color: linen;
+}
+
+
+/* Change the color of the input fields */
+input[type="text"],
+input[type="name"],
+input[type="email"],
+input[type="message"],
+textarea {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Change the color of the "Send Message" button */
+.btn-primary {
+    background-color: linen;
+    color: #333;
+    border-radius: 10px !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: linen;
+    border: 1px solid linen;
+}
+
+/*Footer*/
+
+footer {
+    color: linen;
+    width: 100%;
+    margin-top: 5%;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 32px;
+    font-size: 2rem;
+    color: linen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: bisque;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 360px) {
+    img {
+        height: 15% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #inaBrand {
+        display: inline-block !important;
+        color: linen;
+    }
+}
