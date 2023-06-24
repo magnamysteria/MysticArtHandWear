@@ -1,0 +1,257 @@
+/* Universal Styles */
+html {}
+
+body {
+    font-family: Arial, sans-serif !important;
+    text-align: center;
+    background-color: #333 !important;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url("../images/backgroundMain.jpg");
+    background-size: cover;
+    background-repeat: round;
+    /* opacity: 0.35; */
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: linen;
+}
+
+/* Gallery section */
+.container {
+    margin-top: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-grid div {
+    position: relative;
+}
+
+.image-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+img:hover {
+    /* background-color: linen; */
+    /* cursor: pointer; */
+    /* opacity: 0.7; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    /* filter: opacity(50%); */
+    /* background-color: black; */
+    height: fit-content;
+}
+
+/* Bootstrap Overrides */
+.jumbotron {
+    background-image: url("../images/backgroundHeader1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: linen;
+    margin-top: 8%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    font-family: 'Agdasima', sans-serif;
+    border-radius: 5%;
+}
+
+.navbar-default {
+    border-color: #a9444200 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #333;
+    font-size: x-large;
+    font-weight: bold;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* justify-content: center; */
+    background-image: url("../images/backgroundMain.jpg");
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.navbar-nav .custom-link {
+    color: linen !important;
+}
+
+.navbar-nav .custom-link:hover {
+    color: bisque !important;
+    border: 1px solid bisque !important;
+    border-radius: 10%;
+}
+
+.navbar-brand.hidden-xs {
+    display: block;
+}
+
+
+#showcase {
+    margin-top: 50px;
+}
+
+#social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fab:hover {
+    color: bisque !important;
+}
+
+/* About Section - Grid System */
+
+.left-col {
+    font-size: 52px;
+    /* font-weight: bold; */
+}
+
+.right-col {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+
+/* Contact Form*/
+
+#contactBtn {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+.container-fluid p {
+    font-weight: bold;
+}
+
+#emailContact {
+    float: left;
+}
+
+/* Current Page Title */
+h2 {
+    color: linen;
+}
+
+/* Change the color of the label texts */
+label[for="name"],
+label[for="email"],
+label[for="message"] {
+    color: linen;
+}
+
+
+/* Change the color of the input fields */
+input[type="text"],
+input[type="name"],
+input[type="email"],
+input[type="message"],
+textarea {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Change the color of the "Send Message" button */
+.btn-primary {
+    background-color: linen;
+    color: #333;
+    border-radius: 10px !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: linen;
+    border: 1px solid linen;
+}
+
+/* audio */
+audio {
+    display: none !important;
+}
+
+/* Overides */
+.container-fluid {
+    padding-right: 0!important;
+    padding-left: 0!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    margin: auto!important;
+  }
+
+  .logo-placeholder {
+    width: 120px;
+    height: 120px;
+    /* background-color: #e0e0e0; /* Example color to make the div visible */
+    /* Additional styles for centering the logo */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.logo-class{
+    height: fit-content;
+}
+
+/*Footer*/
+
+footer {
+    color: linen;
+    width: 100%;
+    margin-top: 5%;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 32px;
+    font-size: 2rem;
+    color: linen;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Agdasima', sans-serif;
+}
+
+footer a:hover {
+    color: bisque;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+   .jumbotron{
+    margin-top: 30%!important;
+   }
+}
