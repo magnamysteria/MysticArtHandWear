@@ -1,2 +1,2 @@
 # MysticArtHandWear
-InanArtGallery
+Inna's Art Gallery :)
